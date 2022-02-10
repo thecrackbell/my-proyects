@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=nav, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100&display=swap');
+        *{
+            box-sizing:border-box;
+        }
+        body{
+            background-color:#405DE6;
+            font-family: "loto", sans-serif;
+            margin:0;
+        }
+        footer{
+            background-color:#833AB4;
+            color:#fff;
+        }
+        nav{
+            background-color: #C13584;
+            color:#fff;
+            display:flex;
+            justify-content:flex-end;
+            padding:15px;
+            top:0;
+            left:0;
+            right:0;
+            z-index:100;
+
+        }
+        nav a{
+            color:#fff;
+            margin-left:20px;
+            text-decoration:none;
+            
+        }
+     
+        nav a:hover{ 
+           border-bottom:3px solid gainsboro;
+        }
+        footer .fa-hreat{
+            color:red;
+
+        }
+        header{
+            background-image: url(https://images.unsplash.com/photo-1575089976121-8ed7b2a54265?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+            background-size:cover;
+            background-position:center center;
+            color:#fff;
+            flex-direction: column;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            height:100vh;
+            position: relative;
+        }
+        header::after{
+            content: "";
+            background-color:#000;
+            position:absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;    
+            opacity:0.8;    
+        }
+        header *{
+            position:relative;
+            z-index:1;
+        }
+        header h1{
+         font-size:60px;
+         margin-bottom:5px;
+         margin-top:0;
+        }
+        header p{
+         font-size:30px;
+         margin:0;
+        }
+        section{
+            padding:40px;
+            text-align:center;
+        }
+        section p{
+            margin-top:0;
+        }
+        .bg-pinkish{
+            background-color:#A64253;
+            color: #fff;
+        }
+        .social-ul{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            list-style-type:none;
+            padding:0;
+            margin:0;
+
+        }
+        .social-h2{
+          margin:0;
+        }
+        .social-ul a{
+            border-radius:50%;
+            border:3px slolid #fff;
+            color:#fff;
+            display: inline-flex;
+            align-items:center;
+            justify-content:center;
+            font-size:25px;
+            margin:0 10px;
+            height:50px;
+            width:50px;
+                text-decoration:none;
+
+        }
+      .project-tile{
+        margin:10px;
+      max-width:300px;
+      text-decoration:none;
+      transition: transform 0.3s case;
+      }
+      .project-tile:hover{
+    transform:scale(1.05);
+      }
+      .project-tile img{
+      max-width:100%;
+      }
+      .project-container{
+          display:flex;
+          flex-wrap:wrap;
+          align-items:center;
+          justify-content:center;
+          max-width:810px;
+          margin:20px auto 0;
+      }
+      
+      .project-tile p{
+          color: #000;
+        font-size: 20px;
+        margin-top:10px;
+
+      }
+    @media (max-width:440px){
+      section{
+       padding:20px;
+      }
+    }
+      
+   
+
+    </style>
+    <nav>
+        <a href="#welcome-section">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#social">Social</a>
+    </nav>
+
+        <header id="welcome-section">
+        <h1>Hello</h1>
+        <p>My name is Jesus Gutierrez</p>
+        <p> and I wanna be a web deloper</p>
+       </header>
+
+    
+    <section id="projects"> 
+        <h2>Projects</h2>
+        <div class="project-container">
+       
+        <a class="project-tile"  href="https://codepen.io/jesus-ernesto-gutierres/pen/KKXYRjm" target="_blank"> <img src="https://media.istockphoto.com/photos/man-working-on-laptop-at-cafe-picture-id1317787665?b=1&k=20&m=1317787665&s=170667a&w=0&h=BTy4IYYOiJFyX2c8eChRT2FpWCVRNSIH5HrVrQacWbE=" alt="">
+        <p>Tribute Page</p>
+        </a>
+        <a class="project-tile" href="https://codepen.io/jesus-ernesto-gutierres/pen/KKXYRjm" target="_blank"> <img src="https://media.istockphoto.com/photos/close-up-of-a-smart-young-woman-coding-picture-id1332378618?b=1&k=20&m=1332378618&s=170667a&w=0&h=wobDGfLkR3qAKWPidg-zth-A9ex4KCQQzzK_KXfAhxE=" alt="">
+            <p>Documentation Page</p>
+            </a>
+        <a class="project-tile" href="https://codepen.io/jesus-ernesto-gutierres/pen/KKXYRjm" target="_blank"> <img src="https://media.istockphoto.com/photos/construction-site-web-app-background-orange-protective-helmet-in-of-picture-id1323857388?b=1&k=20&m=1323857388&s=170667a&w=0&h=2Q64-z_K0WbbmHV9eFB-xoypYCNIFLI16q3FnrAa3kg=" alt="">
+                <p>Survey Form</p>
+                </a>
+        <a class="project-tile" href="https://codepen.io/jesus-ernesto-gutierres/pen/KKXYRjm" target="_blank"> <img src="https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            <p>Landing Page</p>
+            </a>
+        <a class="project-tile" href="https://codepen.io/jesus-ernesto-gutierres/pen/KKXYRjm" target="_blank"> <img src="https://media.istockphoto.com/photos/digital-security-concept-picture-id1300897309?b=1&k=20&m=1300897309&s=170667a&w=0&h=1fOBpTjlTwciP8Z_yigJO-SFgEr8e_aq5lG2ilUiqXk=" alt="">
+                <p>Landing Page</p>
+                </a>
+        <a class="project-tile" href="https://codepen.io/jesus-ernesto-gutierres/pen/KKXYRjm" target="_blank"> <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGNvZGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    <p>Landing Page</p>
+                    </a>
+        </div>
+       
+    </section>
+    <section id="social" class="bg-pinkish">
+        <h2 class="social-h2">Social Media</h2>
+        <p>You cuold find me on</p>
+        <ul class="social-ul">
+        <li><a href="https://github.com/getify/You-Dont-Know-JS/tree/2nd-ed/.github/ISSUE_TEMPLATE" target="_blank" id="profile-link"><h2 class="fab fa-github"></h2></a></li>
+        <li><a href="https://twitter.com/home" target="_blank"><h2 class="fab fa-twitter"></h2></a></li>
+        <li ><a href="https://www.youtube.com/channel/UCmlCbhw3pGFBgV9O62zZb_A" target="_blank"><h2 class="fab fa-youtube"></h2></a></li>
+        <li><a href="https://www.linkedin.com/home/?originalSubdomain=ve" target="_blank"><h2 class="fab fa-linkedin "></h2></a></li>
+        <li><a href="https://www.instagram.com/?hl=es-la" target="_blank"><h2 class="fab fa-instagram"></li</a></li>
+        <li><a href="https://www.facebook.com/" target="_blank" ><h2 class="fab fa-facebook"></h2></a></li>
+        
+        </ul>
+    </section>
+    <footer>Made with <i class="fas fa-hreat"></i>by Florin Pop</footer>
+</body>
+</html>

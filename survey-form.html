@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+header{
+
+padding:2rem 1rem 1rem 1rem;
+
+
+}
+h1{
+    font-weight:400;
+    line-height:1.2;
+    margin:0;
+    text-shadow:1px 1px #333333;
+}
+form{
+    background:var(--color-darkblue-alpha);
+}
+body {
+    font-family: var(--font-family);
+    background:red;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-white);
+    margin: 0;
+    font-size:10px;
+}
+button,input,textarea, select{
+    font-family:inherit;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+user agent stylesheet
+body {
+    display: block;
+    margin: 8px;
+    font-family:var(--font-family);
+    line-height:1.6;
+    background-repeat:no-repeat;
+    background-position:center;
+    color:var(--color-white);
+   
+   
+margin:0;
+}
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+    --accent-left:rgba(58,58,158,0.8);
+    --font-family:"Poppins", sans-serif;
+    --accent-right:rgba(136,136,206,0.7);
+    --size-subheading:1.125rem;
+    --size-label:1.125rem;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient( 
+115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+  
+}
+/*Utillites*/
+.container{
+    margin:3.125rem auto;
+
+}
+.text-center{
+    text-align:center !important;
+}
+.description{
+    font-size: var(--size-subheading);
+    margin:1rem auto;
+    
+}
+#title{
+    text-align:center;
+    margin-top:3.125rem;
+}
+#description{
+    text-align:center;
+    font-style:italic;
+    margin-bottom:0.5rem;
+    font-weight:200;
+    text-shadow:1px 1px 1px rgb(0 0 0/40%);
+    font-size:1.125rem;
+
+}
+#survey-form{
+   
+padding:2.5rem 0.625rem;
+border-radius:0.3rem;
+border-radius:0.3rem;
+width:720px;
+margin:auto;
+margin-top:30px;
+width:50%;
+}
+#survey-form-div{
+   margin-bottom:1.25rem;
+}
+.form-group{
+    display: flex;
+    flex-direction:column;
+    margin: 2rem;
+}
+.form-group p{
+    line-height:0.5rem 0.1rem;
+    margin:0.5rem 0;
+}
+.form-group p:not(:nth-child(1)){
+    
+    margin:0.5rem 0;
+}
+.form-label{
+font-size:var(--size-label);
+
+
+}
+.form-control{
+    display:block;
+    width:100%;
+    font-size:1rem;
+    height:2.5rem;
+    padding:0.375rem 0.75rem;
+    border-radius:0.3rem;
+    border:1px solid #dddddd;
+    margin-top:0.4rem;
+}
+input[type="radio"],
+input[type="checkbox"]{
+    width:1rem;
+    height:1rem;
+
+
+
+}
+input[type="checkbox"]{
+    margin-right:0.5rem;
+}
+textarea{
+    font-size:1.2rem;
+    padding:0.375rem 0.75rem;
+    width:100%;
+    height:auto;
+
+}
+button{
+    background-color:var(--color-green);
+    border:none;
+    cursor: pointer;
+    color:var(--color-white);
+    padding:0.75rem;
+    font-size:var(--size-label);
+}
+
+@media screen and (max-width: 1141px){
+    form{
+        width:80%;
+    }
+}
+@media screen and (max-width: 540px){
+    form{
+        width:95%;
+    }
+}
+@media screen and (max-width: 440pxpx){
+    form{
+        
+        padding:0.625rem;
+    }
+    .form-group{
+        margin:1rem 0;
+    }
+    .form-group p{
+        line-height: 1.4;
+        margin:0.5rem 0.1rem;
+    }
+}
+
+
+
+
+
+
+
+    </style>
+
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<div class="
+container">
+<header class="text-center">
+<h1 id="title" >freeCodeCamp Survey Form</h1>
+<p id="description" class="description"><em> Thank you for taking the time to help us improve the platform</em></p>
+</header>
+
+
+<form id="survey-form" action="#" class="form-label" >
+
+    <div class="form-group">
+
+<label for="name" id="name-label">Name</label>
+<input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+</div>
+<div class="form-group">
+<label for="email" id="email-label">Email</label>
+<input type="email" id="email" required class="form-control" placeholder="Enter you email">
+</div>
+<div class="form-group">
+<label for="number" id="number-label">Age (optional)</label>
+<input type="number" name="age"  id="number" min="10" max="99" placeholder="Age" required class="form-control">
+</div>
+<div class="form-group">
+<label for="dropdown">Which option best describes your current role?</label>
+<select  id="dropdown" name="dropdwon" class="form-control" required>
+ <option disabled>Select current role</option>
+ <option value="Student">Student</option>
+
+ <option value="Full Time Job">Full Time Job</option>
+
+ <option value="Full Time Learner">Full Time Learner</option>
+ <option value="Prefer not to say">Prefer not to say</option>
+ <option value="Otrher">Otrher</option>
+</select>
+
+</div>
+<div class="form-group">
+    <p>Would you recommend freeCodeCamp to a friend?</p>
+ <p>
+    <label for="definitely">Definitely</label>
+ <input type="radio"  id="definitely" name="answer" value="definitely" checked>
+</p>
+<p>
+ <label for="Maybe">Maybe</label>
+ <input type="radio"  id="maybe" name="recommend" value="maybe" >
+</p>
+<p"form-group">
+ <label for="not Sure">Not Sure</label>
+ <input type="radio"  id="not-sure" name="recommend" value="not-sure" >
+</p>
+
+</div>
+<div class="form-group">
+ <label for="favorite">What is your favorite feature of freeCodeCamp?</label>
+<select  id="favorite" class="form-control" name="favorite">
+ <option value="" disabled selected>Select an option</option>
+ <option disabled>Select an option</option>
+
+ <option value="Chllengeas">Chllengeas</option>
+
+ <option value="Projects">Projects</option>
+ <option value="Community">Community</option>
+ <option value="Open Source">Open Source</option>
+ <option value="Other">Other</option>
+</select>
+<p class="form-group">
+<p>What would you like to see improved? (Check all that apply)</p>
+<p>
+<label for="Front-end Projects">Front-end Projects</label>
+<input type="checkbox"  id="Front-end Projects"  value="Front-end Projects" name="checkbox"> 
+</p>
+<p>
+<label for="Back-end Projects">Back-end Projects</label>
+<input type="checkbox"  id="Back-end Projects"  value="Back-end Projects">
+</p>
+<p>
+<label for="Data Visualization">Data Visualization</label>
+<input type="checkbox"  id="Data Visualization"  value="Data Visualization">
+</p> 
+<p>
+<label for="Challenges">Challenges</label>
+<input type="checkbox" id="Challenges"  value="Challenges">
+</p>
+<p>
+<label for="Open Source Community">Open Source Community</label>
+<input type="checkbox"  id="Open Source Community"  value="Open Source Community">
+</p>
+<p>
+<label for="Gitter help rooms">Gitter help rooms</label>
+<input type="checkbox" id="Gitter help rooms"  value="Gitter help rooms">
+</p>
+<p> 
+<label for="Videos">Videos</label>
+<input type="checkbox"  id="Videos"  value="Videos">
+</p>
+<p>
+<label for="City Meetup">City Meetup</label> 
+<input type="checkbox"  id="City Meetups"  value="City Meetups">
+</p>
+<p>
+<label for="Wiki">Wiki</label> 
+<input type="checkbox"  id="Wiki"  value="Wiki">
+</p>
+<p>
+<label for="Forum">Forum</label> 
+<input type="checkbox"  id="Forum"  value="Forum">
+</p>
+<p>
+<label for="Additional Courses">Additional Courses</label> 
+<input type="checkbox"  id="Additional Courses"  value="Additional Courses">
+</p>
+</div>
+<div class="form-group">
+<p>Any comments or suggestions?</p>
+<textarea name="comment" id="comment" cols="50" rows="6" placeholder="Enter your comment" required></textarea>
+</div>
+<div class="form-group">
+<button id="submit" type="submit">Submit</button>
+</div>
+
+</div>
+
+
+</form>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
